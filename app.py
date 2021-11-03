@@ -31,11 +31,7 @@ st.set_page_config(
     # layout="wide",
     initial_sidebar_state="expanded",
 )
-with open('credintials.yml', 'r') as f:
-    credintials = yaml.load(f, Loader=yaml.FullLoader)
-    db_credintials = credintials['db']
-    system_pass = credintials['system_pass']['admin']
-    email_sender = credintials['email_sender']
+
 # database localhost connection
 # @st.cache()
 
